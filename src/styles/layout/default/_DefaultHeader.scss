@@ -1,0 +1,20 @@
+.header {
+    &__container {
+        display: flex;
+        align-items: center;
+    }
+
+    &__navigation {
+        display: flex;
+        align-items: center;
+        grid-gap: 1rem;
+    }
+
+    &__navigation_item {
+        a {
+            color: var(--text-color);
+
+            display: inline-block;
+        }
+    }
+}
