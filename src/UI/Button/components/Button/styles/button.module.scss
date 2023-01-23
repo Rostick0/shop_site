@@ -1,0 +1,17 @@
+@import '../../../styles/button_normalize.module.scss';
+
+.button {
+    @extend .button_normalize;
+
+    background-color: var(--style-color);
+
+    color: var(--button-color);
+
+    &:hover {
+        background-color: var(--style-hover-color);
+    }
+
+    &:active {
+        background-color: var(--style-active-color);
+    }
+}

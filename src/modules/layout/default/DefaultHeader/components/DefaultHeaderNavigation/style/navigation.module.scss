@@ -1,0 +1,41 @@
+.navigation {
+    display: flex;
+    align-items: center;
+    grid-gap: 1rem;
+
+    &__item {
+        a {
+            color: var(--text-color);
+
+            display: inline-flex;
+
+            position: relative;
+
+            transition: 300ms;
+
+            &:hover {
+                color: var(--style-color);
+
+                &::after {
+                    background-color: var(--style-color);
+
+                    width: 100%;
+                }
+            }
+
+            &::after {
+                content: "";
+
+                background-color: var(--text-color);
+
+                position: absolute;
+                bottom: -0.25rem;
+                
+                transition: 300ms;
+
+                width: 0;
+                height: 0.2rem;
+            }
+        }
+    }
+}

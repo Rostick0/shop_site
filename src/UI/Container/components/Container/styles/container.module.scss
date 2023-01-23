@@ -1,0 +1,7 @@
+@import "../../../styles/container_default.module.scss";
+
+.container {
+    @extend .container_default;
+
+    max-width: 1170px;
+}

@@ -1,0 +1,33 @@
+@import '../../../styles/input_default.module.scss';
+
+.input {
+    @extend .input_default;
+
+    background-color: transparent;
+
+    border-color: var(--style-color);
+
+    color: var(--style-color);
+
+    &::placeholder {
+        color: var(--style-hover-color);
+
+        opacity: 0.5;
+    }
+
+    &:hover {
+        background-color: transparent;
+
+        border-color: var(--style-hover-color);
+
+        color: var(--style-hover-color);
+    }
+
+    &:active {
+        background-color: transparent;
+
+        border-color: var(--style-active-color);
+
+        color: var(--style-active-color);
+    }
+}
