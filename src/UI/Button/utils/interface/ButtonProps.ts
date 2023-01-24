@@ -1,6 +1,6 @@
 export default interface ButtonProps {
-    className?: String | undefined,
-    onClick?: Function | undefined,
+    className?: string | undefined,
+    onClick?: React.MouseEventHandler<HTMLElement>,
     id?: string | undefined,
     type?: 'submit' | 'reset' | 'button' | undefined,
     name?: string | undefined,

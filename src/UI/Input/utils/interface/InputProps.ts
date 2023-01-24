@@ -1,10 +1,10 @@
 export default interface InputProps {
     className?: string | undefined,
     value?: string | number | null | undefined,
-    onFocus?: Function | undefined,
-    onBlur?: Function | undefined,
-    onInput?: Function | undefined,
-    onChange?: Function | undefined,
+    onFocus?: React.FocusEventHandler<HTMLElement>,
+    onBlur?: React.FocusEventHandler<HTMLElement>,
+    onInput?: React.FormEventHandler<HTMLElement>,
+    onChange?: React.FormEventHandler<HTMLElement>,
     placeholder?: string | undefined,
     id?: string | undefined,
     type?: string | undefined,
@@ -12,3 +12,4 @@ export default interface InputProps {
     readOnly?: boolean | undefined,
     disabled?: boolean | undefined,
 }
+

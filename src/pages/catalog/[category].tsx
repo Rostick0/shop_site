@@ -1,8 +1,7 @@
 import { useRouter } from "next/router";
 import { DefaultLayout } from '@/modules/layout/default';
-import { Input } from "@/UI/Input";
 import { Container } from "@/UI/Container";
-import { CatalogSearch } from "@/modules/catalog";
+import { CatalogSearch } from "@/modules/catalog/components/CatalogSearch";
 
 export default function PageCatalogCaregory() {
     const router = useRouter();
