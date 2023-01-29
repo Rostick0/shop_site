@@ -5,6 +5,7 @@ export default function Input(props: InputProps) {
     return (
         <input
             className={style.input + (props.className ? ' ' + props.className : '')}
+            value={props.value}
             onFocus={props.onFocus}
             onBlur={props.onBlur}
             onInput={props.onInput}

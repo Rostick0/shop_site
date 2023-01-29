@@ -1,6 +1,6 @@
 export default interface InputProps {
     className?: string | undefined,
-    value?: string | number | null | undefined,
+    value?: string | ReadonlyArray<string> | number | undefined,
     onFocus?: React.FocusEventHandler<HTMLElement>,
     onBlur?: React.FocusEventHandler<HTMLElement>,
     onInput?: React.FormEventHandler<HTMLElement>,

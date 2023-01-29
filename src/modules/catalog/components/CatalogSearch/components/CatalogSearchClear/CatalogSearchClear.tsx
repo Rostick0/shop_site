@@ -15,7 +15,9 @@ export default function CatalogSearchClear(props: CatalogSearchClearProps) {
             timeout={300}
             mountOnEnter
         >
-            <X></X>
+            <X
+                onClick={props.onClick}
+            ></X>
         </CSSTransition >
     )
 }
