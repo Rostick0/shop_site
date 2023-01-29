@@ -1,0 +1,23 @@
+@import '../../../styles/a_normalize.scss';
+
+.a {
+    @extend .a_normalize;
+
+    color: var(--style-color);
+
+    &:hover {
+        color: var(--style-hover-color);
+
+        &::after {
+            background-color: var(--style-hover-color);
+        }
+    }
+
+    &:active {
+        color: var(--style-active-color);
+
+        &::after {
+            background-color: var(--style-active-color);
+        }
+    }
+}

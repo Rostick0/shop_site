@@ -1,10 +1,11 @@
 :root {
     --background-color: #fff;
+    --background-second-color: #f6f6f6;
 
     --button-color: #fff;
 
     --text-color: #333;
-    
+
     --style-color: #3366FF;
     --style-hover-color: #3388FF;
     --style-active-color: #3344FF;
@@ -12,6 +13,7 @@
 
 body._theme-dark {
     --background-color: #222;
+    --background-second-color: #333;
 
     --button-color: #fff;
 
