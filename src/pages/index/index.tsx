@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { DefaultLayout } from '@/modules/layout/default';
+import { DefaultLayout } from '@/components/layout/default';
 import { Button, ButtonOutline } from '@/UI/Button';
 
 export default function PageIndex() {

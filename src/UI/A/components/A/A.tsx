@@ -1,14 +1,18 @@
 import Link from 'next/link';
+import { FC, memo } from 'react';
 import AProps from "../../utils/AProps";
-import aStyle from './styles/a.module.scss';
+import styles from './styles/a.module.scss';
 
-export default function A(props: AProps) {
-    return (
-        <Link
-            className={aStyle.a + (props.className ? props.className + ' ' + aStyle.a : '')}
-            href={props.href}
-        >
-            {props.children}
-        </Link>
-    )
-}
+const A: FC<AProps> = memo(
+    ({ className, href, children }): JSX.Element => {
+        return (
+            <Link
+                className={styles.a + (className ? className + ' ' + styles.a : '')}
+                href={href}
+            >
+                {children}
+            </Link>
+        )
+    });
+
+export default A;

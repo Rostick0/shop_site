@@ -1,4 +1,4 @@
-import DefaultLayout from '@/modules/layout/default/DefaultLayout/DefaultLayout';
+import DefaultLayout from '@/components/layout/default/DefaultLayout/DefaultLayout';
 
 export default function PageHelp() {
     return (

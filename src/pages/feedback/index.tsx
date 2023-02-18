@@ -1,4 +1,4 @@
-import { DefaultLayout } from '@/modules/layout/default';
+import { DefaultLayout } from '@/components/layout/default';
 
 export default function PageFeedback() {
     return (

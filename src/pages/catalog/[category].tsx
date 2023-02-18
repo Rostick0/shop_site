@@ -1,7 +1,8 @@
 import { useRouter } from "next/router";
-import { DefaultLayout } from '@/modules/layout/default';
+import { DefaultLayout } from '@/components/layout/default';
 import { Container } from "@/UI/Container";
-import { CatalogSearch } from "@/modules/catalog/components/CatalogSearch";
+import { CatalogSearch } from "@/components/catalog";
+import { CategoryWidget } from "@/components/catalog/category";
 
 export default function PageCatalogCaregory() {
     const router = useRouter();
@@ -13,13 +14,7 @@ export default function PageCatalogCaregory() {
                 <CatalogSearch></CatalogSearch>
             </Container>
 
-            <div className="category">
-                <div className="container">
-                    <div className="category__container">
-                        {category}
-                    </div>
-                </div>
-            </div>
+            <CategoryWidget></CategoryWidget>
         </DefaultLayout>
     )
 }

@@ -1,8 +1,13 @@
-import container from './styles/container.module.scss';
+import styles from './styles/container.module.scss';
 import ContainerProps from '../../utils/interface/ContainerProps';
+import { FC, memo } from 'react';
 
-export default function Container(props: ContainerProps) {
-    return (
-        <div className={container.container}>{props.children}</div>
-    )
-}
+const Container: FC<ContainerProps> = memo(
+    ({ children }): JSX.Element => {
+        return (
+            <div className={styles.container}>{children}</div>
+        )
+    }
+);
+
+export default Container;

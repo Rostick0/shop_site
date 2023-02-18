@@ -1,11 +1,11 @@
-import { DefaultLayout } from '@/modules/layout/default';
+import { DefaultLayout } from '@/components/layout/default';
 import { Container } from '@/UI/Container';
-import catalog from './style/catalog.module.scss'
+import styles from './style/catalog.module.scss'
 
 export default function PageCatalog() {
     return (
         <DefaultLayout>
-            <div className={catalog.catalog}>
+            <div className={styles.catalog}>
                 <Container>
 
                 </Container>

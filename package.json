@@ -23,6 +23,7 @@
   },
   "devDependencies": {
     "@types/react-transition-group": "^4.4.5",
-    "sass": "^1.57.1"
+    "sass": "^1.57.1",
+    "ts-plugin-scss-modules": "^0.1.2"
   }
 }

@@ -1,7 +1,9 @@
-import Button from "./components/Button/Button";
-import ButtonOutline from "./components/ButtonOutline/ButtonOutline";
+import { Button } from "./components/Button";
+import { ButtonOutline } from "./components/ButtonOutline";
+import { X } from './components/X';
 
 export {
     Button,
-    ButtonOutline
+    ButtonOutline,
+    X
 }

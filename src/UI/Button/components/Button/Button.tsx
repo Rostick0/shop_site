@@ -1,15 +1,19 @@
-import style from './styles/button.module.scss';
+import styles from './styles/button.module.scss';
 import ButtonProps from '../../utils/interface/ButtonProps';
+import { FC, memo } from 'react';
 
-export default function Button(props: ButtonProps): JSX.Element {
-    return (
-        <button
-            className={style.button + (props.className ? ' ' + props.className : '')}
-            onClick={props.onClick}
-            id={props.id}
-            name={props.name}
-            type={props.type}
-            disabled={props.disabled}
-        >{props.children}</button>
-    )
-}
+const Button: FC<ButtonProps> = memo(
+    ({ className, onClick, id, name, type, disabled, children }): JSX.Element => {
+        return (
+            <button
+                className={styles.button + (className ? ' ' + className : '')}
+                onClick={onClick}
+                id={id}
+                name={name}
+                type={type}
+                disabled={disabled}
+            >{children}</button>
+        )
+    });
+
+export default Button

@@ -1,21 +1,25 @@
-import style from './styles/input.module.scss';
+import styles from './styles/input.module.scss';
 import InputProps from '../../utils/interface/InputProps';
+import { FC, memo } from 'react';
 
-export default function Input(props: InputProps) {
-    return (
-        <input
-            className={style.input + (props.className ? ' ' + props.className : '')}
-            value={props.value}
-            onFocus={props.onFocus}
-            onBlur={props.onBlur}
-            onInput={props.onInput}
-            onChange={props.onChange}
-            placeholder={props.placeholder}
-            name={props.name}
-            id={props.id}
-            type={props.type}
-            readOnly={props?.readOnly}
-            disabled={props.disabled}
-        />
-    )
-}
+const Input: FC<InputProps> = memo(
+    ({ className, value, onFocus, onBlur, onInput, onChange, placeholder, name, id, type, readOnly, disabled }): JSX.Element => {
+        return (
+            <input
+                className={styles.input + (className ? ' ' + className : '')}
+                value={value}
+                onFocus={onFocus}
+                onBlur={onBlur}
+                onInput={onInput}
+                onChange={onChange}
+                placeholder={placeholder}
+                name={name}
+                id={id}
+                type={type}
+                readOnly={readOnly}
+                disabled={disabled}
+            />
+        )
+    });
+
+export default Input;
